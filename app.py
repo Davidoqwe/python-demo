@@ -311,7 +311,8 @@ for x in fruits:
       newlist.append(x)
 print(newlist)
 
-
+thislist=["banana", "apple","cherry"]
+print(thislist)
 
 
 
