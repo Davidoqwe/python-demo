@@ -415,27 +415,94 @@ import numpy as np
 arr1 = np.array([10, 20, 30, 40, 50, 60])
 arr2 = np.array([20, 21, 22, 23, 24, 25])
 
-newarr = np.subtract(arr1, arr2)
+newarr = np.multiply(arr1, arr2)
+print(newarr)
+# Divide the value in arr1 with the values in arr2
+import numpy as np
+
+arr1=np.array([10, 20, 30, 40, 50, 60])
+arr2=np.array([3, 5, 10, 8, 2, 33])
+
+newarr=np.divide(arr1, arr2)
+print(newarr)
+# Raise the values in arr1 to the power f values in arr2
+import numpy as np
+
+arr1=np.array([10, 20, 30, 40, 50, 60])
+arr2=np.array([3, 5, 6, 8, 2, 33])
+
+newarr=np.power(arr1, arr2)
 print(newarr)
 
+import numpy as np
 
+arr1=np.array([10, 20, 30, 40 ,50, 60])
+arr2=np.array([3, 7, 9, 8, 2, 33])
+newarr=np.mod(arr1, arr2)
+print(newarr)
+# Return the remainders
+import numpy as np
 
+arr1=np.array([10, 20, 30, 40, 50, 60])
+arr2=np.array([3, 7, 9, 8, 2, 33])
 
+newrr=np.remainder(arr1, arr2)
+print(newarr)
+# Retun the absolute values of the array
+import numpy as np
 
+arr=np.array([-1, -2, -1, -2, -3, -4])
 
+newarr=np.absolute(arr1,arr2)
 
+# ROUNDING DECIMALS
+# ZTruncate elements of follwing array
+import numpy as np
+arr=np.trunc([-3.1666, 3.6667])
+print(arr)
 
+# same example, using fix ()
+import numpy as np
+arr=np.fix([-3.1666, 3.6667])
+print(arr)
+# Round off 3.1666 to 2 decimal place:
+import numpy as np
+arr=np.around(3.1666, 2)
+print(arr)
+# Floor the elements of following array
+import numpy as np
+arr=np.floor([-3.1666, 3.6667])
+print (arr)
 
+# ceil the elements of follwing array
+import numpy as np
+arr=np.ceil([-3.1666, 3.6667])
+print(arr)
 
+# NUMPY LOGS
+# Find log at base 2 of all elements of following array
+import numpy as np
+arr=np.arange(1, 10)
+print(np.log2(arr))
 
+# Find log at base 10 of all elements of following array
+import numpy as np
+arr=np.arange(1,10)
+print(np.log10(arr))
 
+# Find log at base 10 of all elements of following array
+import numpy as np
+arr=np.arange(1, 10)
+print(np.log10(arr))
 
+# find log at base of all elements of following array
+import numpy as np
+arr=np.arange(1, 10)
+print(np.log(arr))
+# LOg at Any Base
+from math import log
+import numpy as np
 
-
-
-
-
-
-
-
+nplog=np.frompyfunc(log, 2, 1)
+print(nplog(100, 15))
 
