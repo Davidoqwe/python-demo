@@ -505,4 +505,204 @@ import numpy as np
 
 nplog=np.frompyfunc(log, 2, 1)
 print(nplog(100, 15))
+# NUMPY SUMMATIONS
+# Add the values in arr1 to the values in arr2
+import numpy as np
 
+arr1=np.array([1, 2, 3])
+arr2=np.array([1, 2, 3])
+
+newarr=np.add(arr1, arr2)
+
+print(newarr)
+# Sum the values in arr1 the values in arr2:
+import numpy as np
+
+arr1=np.array([1, 2, 3])
+arr2=np.array([1, 2, 3])
+
+newarr=np.sum([arr1, arr2])
+
+print(newarr)
+
+# Sum the value in arr1 and the values in arr2
+import numpy as np
+
+arr1=np.array([1, 2, 3])
+arr2=np.array([1, 2, 3])
+
+newarr=np.sum([arr1, arr2])
+
+print(newarr)
+
+import numpy as np
+
+arr1=np.array([1, 2, 3])
+arr2=np.array([1, 2, 3])
+
+newarr=np.sum([arr1, arr2], axis=1)
+
+print(newarr)
+# Perform cummulative summation in the following array
+import numpy as np
+
+arr=np.array([1, 2, 3])
+
+newarr=np.cumsum(arr)
+
+print(newarr)
+
+# NUMPY PRODUCTS
+# Find the product of the elements of this array
+import numpy as np
+
+arr=np.array([1, 2, 3, 4])
+
+x=np.prod(arr)
+print(x)
+# Find the product of the elements of two arrays:
+import numpy as np
+
+arr1=np.array([1, 2, 3, 4])
+arr2=np.array([5, 6, 7, 8])
+
+x=np.prod([arr1, arr2])
+print(x)
+# perform summation in the following array over 1st axis:
+import numpy as np
+
+arr1=np.array([1, 2, 3, 4])
+arr2=np.array([5, 6, 7, 8])
+
+newarr=np.prod([arr1, arr2], axis=1)
+print(newarr)
+#  Take cummulative product of all elements for following array:
+import numpy as np
+
+arr=np.array([5, 6, 7, 8])
+
+newarr=np.cumprod(arr)
+print(newarr)
+# NUMPY DIFFERENCES
+# compute discrete difference of the following array:
+import numpy as np
+
+arr=np.array([10, 15, 25, 5])
+
+newarr=np.diff(arr)
+print(newarr) 
+# compute discrete difference of the following array twice:
+import numpy as np
+
+arr=np.array([10, 15, 25, 5])
+
+newarr=np.diff(arr, n=2)
+print(newarr)
+# NUMPY LCM LOWESR COMMON MULTIPLE
+# Find the LCM of the following two numbers
+import numpy as np
+
+num1=4
+num2=6
+
+x=np.lcm(num1, num2)
+
+print(x)
+# Find the LCM of the values of the following array
+import numpy as np
+
+arr=np.array([3, 6, 9])
+
+x=np.lcm.reduce(arr)
+print(x)
+# Find the LCM of all values of anarray conteins all integers from 1 to 10
+import numpy as np
+
+arra=np.arange(1, 11)
+
+x=np.lcm.reduce(arr)
+print(x)
+# NUMPY GCD (GREATEST COMMON DIVISOR) / HCF (HIGHEST COMMON FACTOR)
+# Find the HCF of the following two numbers
+import numpy as np
+
+num1=6
+num2=9
+
+x=np.gcd(num1, num2)
+print(x)
+# Find the GCD for all of the numbers in the following array:
+import numpy as np
+arr=np.array([20, 8, 32, 36, 16])
+x=np.gcd.reduce(arr)
+print(x)
+# NUMPY TRIGOMETRIC FUNCTIONS
+# find sine value of p|2
+import numpy as np
+
+x=np.sin(np.pi/2)
+
+print(x)
+# Find sine values for all of the values in arr:
+import numpy as np
+
+arr=np.array([np.pi/2, np.pi/3, np.pi/4, np.pi/5])
+
+x=np.sin(arr)
+print(x)
+# Convert all the values in the following array arr to radians:
+import numpy as np
+
+arr=np.array([90,180,270,360])
+
+x=np.deg2rad(arr)
+print(x)
+# find the angle f 1.0
+import numpy as np
+
+x=np.arcsin(1.0)
+
+print(x)
+# Find the hyptenues for 4 base and 3 perpendicular:
+import numpy as np
+
+base=3
+perp=4
+
+x=np.hypot(base,perp)
+print(x)
+# NUMPY HYPERBOLIC FUNCTIONS
+# Find sinh value f pi/2
+import numpy as np
+
+x=np.sinh(np.pi/2)
+
+print(x)
+# Find cosh value for all the values in arr
+import numpy as np
+
+arr=np.array([np.pi/2, np.pi/3, np.pi/4, np.pi/5])
+x=np.cosh(arr)
+
+print(x)
+# Find the angle of 1.0
+import numpy as np
+
+x=np.arcsinh(1.0)
+print(x)
+# Find the angle for all of the tanh values in array
+import numpy as np
+
+arr=np.array([0.1, 0.2, 0.5])
+x=np.arctanh(arr)
+
+print(x)
+# NUMPY SET OPERATIONS
+import numpy as np
+arr=np.array([1, 1, 1, 2, 3, 4, 5, 6, 7])
+# find union of the following two set arrays
+import numpy as np
+arr1=np.array([1, 2, 3, 4])
+arr2=np.array([3, 4, 5, 6])
+newarr=np.setdiff1d(arr1, arr2, assume_unique=True)
+print(newarr)
